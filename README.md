@@ -1,56 +1,30 @@
-# Ravneesh Kumar — Performance Marketing Portfolio
+# Ravneesh Kumar — Performance Marketing Portfolio (Version 2)
 
-A responsive personal portfolio website built with Next.js, TypeScript, Tailwind CSS and Framer Motion.
+Next.js portfolio for Ravneesh Kumar, Performance Marketer & Media Buyer.
 
-## Sections
-- Home / Hero
-- About Me
-- Skills & Tools
-- Projects
-- Services
-- Brands
-- Contact
+## What's updated
+- Added supplied profile photograph at `public/ravneesh-profile.jpg`.
+- Added brand favicon/logo images to the Brands section.
+- Removed LK-EA from the brands and projects.
+- Schneider Electric project now includes B2B lead generation, B2C lead generation and B2C e-commerce purchases.
+- Added B2C lead generation to the homepage positioning and Services.
+- Added WhatsApp contact: +91 79822 61772 (`https://wa.me/917982261772`).
+- Email: ravneeshk2@gmail.com
+- LinkedIn: https://www.linkedin.com/in/ravneesh-kumar/
+- Updated visual theme to midnight navy, periwinkle and warm ivory; fonts to Space Grotesk and Manrope.
 
 ## Run locally
-
-Requirements: Node.js 18.17+ and npm.
-
+Requires Node.js 18.17+.
 ```bash
 npm install
 npm run dev
 ```
-
 Open http://localhost:3000.
 
-## Personalise before publishing
-
-Search the project for these placeholders and replace them:
-- `ravneeshkumar.vercel.app` in `app/layout.tsx` — update if you use a different domain
-
-Also review:
-- `components/portfolio.tsx` for the brand details, market labels, services and project descriptions.
-- The 3.5+ years experience figure and all claims for accuracy before publishing.
-- The LK-EA market label currently says "Market details to confirm"; update it if you want to specify the market.
-
-## Deploy to Vercel
-
-### Option A — GitHub (recommended)
-1. Create a new repository on GitHub.
-2. Upload the contents of this folder to the repository (the files inside this folder, not the ZIP itself).
-3. Sign in to Vercel with GitHub.
-4. Select **Add New → Project**, import this repository.
-5. Keep the detected Next.js framework settings and click **Deploy**.
-6. After deployment, open **Settings → Domains** to add a custom domain if you have one.
-
-### Option B — Vercel CLI
-```bash
-npm install
-npm run build
-npm install -g vercel
-vercel
-```
+## Deploy
+Push the project contents to the root of your GitHub repository and import the repository into Vercel as a Next.js project. Build command: `npm run build`; install command: `npm install`; root directory: `./`.
 
 ## Notes
-- Brand names are presented as professional experience, not as official endorsements.
-- The portfolio intentionally does not invent campaign results, budgets or ROAS figures. Add verified and client-approved metrics to the project cards when available.
-- Brand marks are typographic placeholders. Replace them with approved official logo assets if you have permission to use them.
+- Brand logo images are loaded from Google Favicon service using each brand's website domain; an internet connection is required for those images.
+- Confirm logo appearance and use official approved brand assets if you have them.
+- The portfolio avoids invented campaign metrics. Add only verified, shareable results.
