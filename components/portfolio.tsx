@@ -25,6 +25,12 @@ const brands: Brand[] = [
   { slug: "faura", logo: "/logos/faura.png", name: "Faura", domain: "faura.in", url: "https://www.faura.in/", market: "India", category: "D2C e-commerce", channels: ["Meta Ads"], description: "Meta advertising strategy and optimisation for D2C e-commerce growth." }
 ];
 
+const journey = [
+  { role: "Senior Executive, Media", company: "#ARM Worldwide", start: "Apr 2026", end: "Present", location: "Gurugram, India" },
+  { role: "Junior Ads Executive", company: "Tealbox Digital", start: "Jul 2025", end: "Mar 2026", location: "Gurugram, India" },
+  { role: "Performance Marketing Executive", company: "Adsflourish", start: "Sep 2023", end: "Jun 2025", location: "Gurugram, India" }
+];
+
 const services = [
   { icon: Target, title: "Performance marketing", desc: "End-to-end paid media strategy, campaign setup, management and optimisation tied to business goals." },
   { icon: Users, title: "B2B lead generation", desc: "Audience research, funnel strategy and lead campaigns built to reach the right decision-makers." },
@@ -43,6 +49,7 @@ const skillGroups = [
 
 const nav = [
   { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
   { label: "Work", href: "#work" },
   { label: "Skills", href: "#skills" },
   { label: "Services", href: "#services" },
@@ -93,7 +100,7 @@ export default function Portfolio() {
 
       <section className="hero wrap" id="top">
         <div className="hero-text">
-          <p className="kicker">Performance marketer and media buyer in New Delhi</p>
+          <p className="kicker">Performance marketer and media buyer</p>
           <h1>Ravneesh<br />Kumar</h1>
           <p className="hero-lead">I plan, buy and optimise paid media that brings in B2B leads, B2C leads and e-commerce sales for brands in India, the US and the UK.</p>
           <div className="hero-actions">
@@ -125,13 +132,31 @@ export default function Portfolio() {
         <div className="wrap about">
           <h2>Curious by nature. Performance by design.</h2>
           <div className="about-copy">
-            <p className="lead">I’m a performance marketer with 3.5+ years of experience planning, running and optimising paid media across Google, Meta, LinkedIn, Microsoft, Pinterest and ChatGPT Ads.</p>
+            <p className="lead">I’m a New Delhi-based performance marketer with 3.5+ years of experience planning, running and optimising paid media across Google, Meta, LinkedIn, Microsoft, Pinterest and ChatGPT Ads.</p>
             <p>I work in two growth areas: <strong>lead generation</strong> (B2B and B2C) and <strong>D2C e-commerce</strong>. My work spans technology, healthcare, electrical, beverage and beauty brands across India, the United States and the United Kingdom.</p>
             <p>From audience research and media plans to launch, conversion tracking and reporting, I connect what we spend on ads to what the business gets back.</p>
             <ul className="strengths">
               <li>Analytical thinking</li><li>Commercial mindset</li><li>Continuous testing</li><li>Clear communication</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section className="section journey-section" id="experience" aria-labelledby="journey-h">
+        <div className="wrap journey">
+          <h2 id="journey-h">Professional journey</h2>
+          <ol className="timeline">
+            {journey.map((j, idx) => (
+              <li key={j.company} className={idx === 0 ? "current" : undefined}>
+                <p className="t-dates">{j.start} – {j.end}</p>
+                <div className="t-body">
+                  <h3>{j.role}</h3>
+                  <p className="t-company">{j.company}</p>
+                  <p className="t-location">{j.location}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
@@ -203,8 +228,8 @@ export default function Portfolio() {
           <h2>Have a growth goal in mind?</h2>
           <p>Let’s talk about how focused media planning and performance marketing can move your business forward.</p>
           <div className="contact-actions">
-            <a className="btn btn-whatsapp" href={WHATSAPP} target="_blank" rel="noreferrer"><MessageCircle size={18} /> WhatsApp +91 79822 61772</a>
-            <a className="btn btn-light" href={EMAIL}><Mail size={18} /> ravneeshk2@gmail.com</a>
+            <a className="btn btn-whatsapp" href={WHATSAPP} target="_blank" rel="noreferrer"><MessageCircle size={18} /> WhatsApp</a>
+            <a className="btn btn-light" href={EMAIL}><Mail size={18} /> Email</a>
             <a className="btn btn-outline-light" href={LINKEDIN} target="_blank" rel="noreferrer"><Linkedin size={18} /> LinkedIn</a>
           </div>
         </div>
