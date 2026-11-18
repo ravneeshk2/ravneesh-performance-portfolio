@@ -25,8 +25,6 @@ Open http://localhost:3000.
 ## Personalise before publishing
 
 Search the project for these placeholders and replace them:
-- `YOUR_EMAIL@example.com` — your professional email address
-- `YOUR-LINKEDIN` — your LinkedIn profile URL
 - `ravneeshkumar.vercel.app` in `app/layout.tsx` — update if you use a different domain
 
 Also review:
