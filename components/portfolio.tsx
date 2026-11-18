@@ -9,30 +9,29 @@ import {
 } from "lucide-react";
 
 const brands = [
-  { name: "Schneider Electric", market: "India", type: "B2B + E-commerce", platforms: "Google · Meta · LinkedIn · Pinterest · ChatGPT" },
+  { name: "Schneider Electric", market: "India", type: "B2B + B2C Leads + E-commerce", platforms: "Google · Meta · LinkedIn · Pinterest · ChatGPT" },
   { name: "Callsara.ai", market: "United States", type: "B2B Lead Generation", platforms: "Google · Meta · LinkedIn · Microsoft" },
   { name: "healow Genie", market: "United States", type: "B2B Lead Generation", platforms: "Google Ads" },
   { name: "Bounce Back Drinks", market: "United Kingdom", type: "D2C E-commerce", platforms: "Meta Ads" },
-  { name: "LK-EA", market: "Market details to confirm", type: "B2B + E-commerce", platforms: "Google · Meta" },
   { name: "Colorbar Cosmetics", market: "India", type: "D2C E-commerce", platforms: "Google · Meta" },
   { name: "Faura", market: "India", type: "D2C E-commerce", platforms: "Meta Ads" },
   { name: "PapayaPads", market: "India", type: "D2C E-commerce", platforms: "Google · Meta" }
 ];
 
 const projects = [
-  { no: "01", name: "Schneider Electric", category: "B2B lead generation + E-commerce", market: "India", channels: ["Google Ads", "Meta Ads", "LinkedIn Ads", "Pinterest Ads", "ChatGPT Ads"], description: "Planning, execution and optimisation across B2B lead generation and e-commerce purchase campaigns for a global energy technology brand.", tone: "lime" },
+  { no: "01", name: "Schneider Electric", category: "B2B leads + B2C leads + B2C purchases", market: "India", channels: ["Google Ads", "Meta Ads", "LinkedIn Ads", "Pinterest Ads", "ChatGPT Ads"], description: "Planning, execution and optimisation across B2B lead generation, B2C lead generation and B2C e-commerce purchase campaigns for a global energy technology brand.", tone: "lime" },
   { no: "02", name: "Callsara.ai", category: "B2B lead generation", market: "United States", channels: ["Google Ads", "Meta Ads", "LinkedIn Ads", "Microsoft Ads"], description: "Full-funnel paid acquisition for the US market, with a focus on reaching relevant business audiences and generating B2B leads.", tone: "lavender" },
   { no: "03", name: "Colorbar Cosmetics", category: "D2C e-commerce", market: "India", channels: ["Google Ads", "Meta Ads"], description: "E-commerce campaign planning and optimisation across search, Performance Max and social advertising.", tone: "pink" },
   { no: "04", name: "Bounce Back Drinks", category: "D2C e-commerce", market: "United Kingdom", channels: ["Meta Ads"], description: "Paid social campaign management focused on e-commerce purchases in the UK market.", tone: "orange" },
   { no: "05", name: "healow Genie", category: "B2B lead generation", market: "United States", channels: ["Google Ads"], description: "Google Ads planning, execution and optimisation to support B2B lead generation in the US.", tone: "blue" },
   { no: "06", name: "PapayaPads", category: "D2C e-commerce", market: "India", channels: ["Google Ads", "Meta Ads"], description: "Paid acquisition across Google and Meta, supporting online purchase objectives.", tone: "yellow" },
-  { no: "07", name: "LK-EA", category: "B2B lead generation + E-commerce", market: "Market details to confirm", channels: ["Google Ads", "Meta Ads"], description: "Campaign planning and optimisation across lead generation and e-commerce objectives.", tone: "mint" },
-  { no: "08", name: "Faura", category: "D2C e-commerce", market: "India", channels: ["Meta Ads"], description: "Meta advertising strategy and optimisation for D2C e-commerce growth.", tone: "purple" }
+  { no: "07", name: "Faura", category: "D2C e-commerce", market: "India", channels: ["Meta Ads"], description: "Meta advertising strategy and optimisation for D2C e-commerce growth.", tone: "purple" }
 ];
 
 const services = [
   { icon: Target, title: "Performance marketing", desc: "End-to-end paid media strategy, campaign setup, management and optimisation aligned with business goals." },
   { icon: Users, title: "B2B lead generation", desc: "Audience research, funnel strategy and lead acquisition campaigns designed to reach relevant decision-makers." },
+  { icon: Target, title: "B2C lead generation", desc: "Consumer-focused lead campaigns built to capture enquiries, registrations and qualified prospects." },
   { icon: TrendingUp, title: "D2C & e-commerce growth", desc: "Customer acquisition and purchase-focused campaigns across search, shopping and paid social." },
   { icon: Layers3, title: "Media planning & buying", desc: "Channel selection, budget allocation, campaign architecture and media investment planning." },
   { icon: Settings2, title: "Tracking & analytics", desc: "Conversion measurement, UTM structures, attribution and analytics implementation." },
@@ -66,32 +65,27 @@ export default function Portfolio() {
       </header>
 
       <section className="hero section-wrap" id="home">
-        <div className="hero-kicker"><span className="status-dot" /> PERFORMANCE MARKETING / MEDIA BUYING</div>
+        <div className="hero-kicker"><span className="status-dot" /> B2B LEADS · B2C LEADS · E-COMMERCE GROWTH</div>
         <div className="hero-grid">
           <div>
             <h1>Making every<br /><span className="serif">click</span> count<span className="lime-dot">.</span></h1>
-            <p className="hero-copy">I’m <strong>Ravneesh Kumar</strong> — a performance marketer and media buyer helping brands turn paid media into measurable business growth.</p>
+            <p className="hero-copy">I’m <strong>Ravneesh Kumar</strong> — a performance marketer and media buyer driving B2B leads, B2C leads and e-commerce growth through paid media.</p>
             <div className="hero-actions">
               <a className="button button-dark" href="#projects">Explore my work <ArrowUpRight size={17} /></a>
               <a className="text-link" href="#contact">Let’s connect <ArrowRight size={16} /></a>
             </div>
             <div className="hero-note"><span>01 / 05</span><span>STRATEGY · EXECUTION · OPTIMISATION</span></div>
           </div>
-          <div className="hero-art" aria-label="Abstract campaign performance dashboard illustration">
-            <div className="art-top"><span>PAID MEDIA / PERFORMANCE</span><span>LIVE MINDSET ↗</span></div>
-            <div className="art-graph">
-              <div className="graph-label">GROWTH IS A PROCESS.</div>
-              <svg viewBox="0 0 520 300" role="img" aria-label="Abstract upward performance trend line">
-                <defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stopColor="#d5f36b" stopOpacity=".32"/><stop offset="100%" stopColor="#d5f36b" stopOpacity="0"/></linearGradient></defs>
-                {[55,115,175,235].map(y => <line key={y} x1="0" x2="520" y1={y} y2={y} stroke="#ffffff" strokeOpacity=".13" strokeDasharray="4 7" />)}
-                <path d="M0 240 C55 225 55 205 105 213 S155 190 190 198 S240 135 285 158 S340 125 375 133 S430 70 465 82 S495 45 520 28 L520 280 L0 280Z" fill="url(#fill)"/>
-                <path d="M0 240 C55 225 55 205 105 213 S155 190 190 198 S240 135 285 158 S340 125 375 133 S430 70 465 82 S495 45 520 28" fill="none" stroke="#d5f36b" strokeWidth="4" strokeLinecap="round"/>
-                <circle cx="465" cy="82" r="6" fill="#d5f36b"/><circle cx="465" cy="82" r="13" fill="none" stroke="#d5f36b" strokeOpacity=".4"/>
-              </svg>
-              <div className="graph-foot"><span>INSIGHT → ACTION</span><span>TEST. LEARN. SCALE.</span></div>
+          <div className="profile-visual">
+            <div className="profile-photo-wrap">
+              <img src="/ravneesh-profile.jpg" alt="Ravneesh Kumar — Performance Marketer and Media Buyer" className="profile-photo" />
+              <div className="profile-photo-caption">
+                <span>RAVNEESH KUMAR</span>
+                <span>PERFORMANCE MARKETER / MEDIA BUYER</span>
+              </div>
             </div>
-            <div className="art-bottom"><span>INDIA / US / UK</span><span>01—2026</span></div>
-            <div className="art-sticker"><Zap size={17} fill="currentColor" /><span>DATA-LED<br />GROWTH</span></div>
+            <div className="profile-note"><span className="status-dot" /> STRATEGY · MEDIA · GROWTH</div>
+            <div className="profile-stamp">PLAN<br/>. BUY<br/>. GROW.</div>
           </div>
         </div>
         <div className="hero-stats">
@@ -161,7 +155,15 @@ export default function Portfolio() {
           <div className="section-head"><span className="eyebrow">05 / TRUSTED EXPERIENCE</span><span className="section-index">BRANDS</span></div>
           <div className="brands-intro"><h2>Different brands.<br /><span className="serif">Different challenges.</span></h2><p>Experience across business models, categories and markets — with a shared focus on effective paid media.</p></div>
           <div className="brand-grid">
-            {brands.map((brand, i) => <div className="brand-card" key={brand.name}><span className="brand-count">0{i + 1}</span><div className="brand-wordmark">{brand.name}</div><div className="brand-type">{brand.type}</div><div className="brand-market">{brand.market}</div><div className="brand-platforms">{brand.platforms}</div></div>)}
+            {brands.map((brand, i) => <div className="brand-card" key={brand.name}><span className="brand-count">0{i + 1}</span><div className="brand-logo-wrap">
+              <img
+                className="brand-logo"
+                src={`https://www.google.com/s2/favicons?domain=${brand.name === "Schneider Electric" ? "se.com" : brand.name === "Callsara.ai" ? "callsara.ai" : brand.name === "healow Genie" ? "healow.com" : brand.name === "Bounce Back Drinks" ? "bouncebackdrinks.com" : brand.name === "Colorbar Cosmetics" ? "colorbarcosmetics.com" : brand.name === "Faura" ? "faura.in" : "papayapads.com"}&sz=128`}
+                alt={`${brand.name} logo`}
+                loading="lazy"
+              />
+              <div className="brand-wordmark">{brand.name}</div>
+            </div><div className="brand-type">{brand.type}</div><div className="brand-market">{brand.market}</div><div className="brand-platforms">{brand.platforms}</div></div>)}
           </div>
           <p className="brand-note">Brand names are shown to describe professional experience. This portfolio does not imply endorsement or an official partnership.</p>
         </div>
@@ -171,11 +173,14 @@ export default function Portfolio() {
         <div className="section-wrap">
           <div className="section-head"><span className="eyebrow">06 / YOUR NEXT MOVE</span><span className="section-index">CONTACT</span></div>
           <div className="contact-content"><span className="contact-kicker"><span className="status-dot"/> OPEN TO THE RIGHT OPPORTUNITIES</span><h2>Have a growth<br />goal in <span className="serif">mind?</span></h2><p>Let’s talk about how thoughtful media planning and performance marketing can help move your business forward.</p><a className="contact-button" href="mailto:ravneeshk2@gmail.com">Start a conversation <ArrowUpRight size={19}/></a></div>
-          <div className="contact-links"><a href="mailto:ravneeshk2@gmail.com"><Mail size={16}/> ravneeshk2@gmail.com</a><a href="https://www.linkedin.com/in/ravneesh-kumar/" target="_blank" rel="noreferrer">LINKEDIN <ArrowUpRight size={14}/></a><span>NEW DELHI, INDIA</span></div>
+          <div className="contact-links"><a href="mailto:ravneeshk2@gmail.com"><Mail size={16}/> ravneeshk2@gmail.com</a><a href="https://wa.me/917982261772" target="_blank" rel="noreferrer">WHATSAPP <ArrowUpRight size={14}/></a><a href="https://www.linkedin.com/in/ravneesh-kumar/" target="_blank" rel="noreferrer">LINKEDIN <ArrowUpRight size={14}/></a><span>NEW DELHI, INDIA</span></div>
         </div>
       </section>
 
       <footer className="footer"><a href="#home" className="wordmark">RK<span>.</span></a><span>BUILT AROUND STRATEGY. DRIVEN BY PERFORMANCE.</span><span>© {new Date().getFullYear()} RAVNEESH KUMAR</span><a href="#home" className="back-top">BACK TO TOP ↑</a></footer>
+      <a className="whatsapp-float" href="https://wa.me/917982261772?text=Hi%20Ravneesh%2C%20I%20visited%20your%20portfolio." target="_blank" rel="noreferrer" aria-label="Chat with Ravneesh on WhatsApp">
+        <span className="whatsapp-symbol">◉</span><span>LET'S CHAT</span>
+      </a>
     </main>
   );
 }
